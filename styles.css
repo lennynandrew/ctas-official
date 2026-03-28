@@ -11,11 +11,24 @@ body, html {
 }
 
 .hero-background {
-    background: #0b1f3b url("hero.jpg") no-repeat;
-    background-size: contain; /* This forces the WHOLE image to fit inside the screen */
-    background-position: center top;
+    /* 1. Point to your image */
+    background-image: url("hero.jpg");
+
+    /* 2. THE SECRET SAUCE: Forces image to match browser width and height exactly */
+    background-size: 100% 100%; 
+
+    /* 3. Anchors it to the top-left so the shield is the first thing it draws */
+    background-position: left top;
+
+    background-repeat: no-repeat;
+    
+    /* 4. Ensures it takes up the full screen of your laptop */
     height: 100vh;
     width: 100%;
+    
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 /* This creates the "invisible" navigation bar over your image */
