@@ -16,12 +16,14 @@
      border: 1px solid red;  /* UNCOMMENT THIS LINE TO SEE WHERE BUTTONS ARE WHILE TESTING */
 }
 
-/* TOP NAV ALIGNMENT (Approximate percentages based on your image) */
-.nav-home { top: 4%; left: 45%; width: 5%; height: 5%; }
-.nav-about { top: 4%; left: 51%; width: 6%; height: 5%; }
-.nav-services { top: 4%; left: 58%; width: 8%; height: 5%; }
-.nav-candidates { top: 4%; left: 67%; width: 9%; height: 5%; }
-.nav-contact { top: 4%; left: 77%; width: 8%; height: 5%; }
+/* ADJUSTED NAV ALIGNMENT */
+.nav-home { top: 4%; left: 45%; width: 5%; height: 5%; }       /* Locked */
+.nav-about { top: 4%; left: 51%; width: 6%; height: 5%; }      /* Locked */
+
+/* Moving these three slightly to the left (decreasing the % number) */
+.nav-services { top: 4%; left: 57%; width: 8%; height: 5%; }   /* Was 58% */
+.nav-candidates { top: 4%; left: 65%; width: 9%; height: 5%; } /* Was 67% */
+.nav-contact { top: 4%; left: 75%; width: 8%; height: 5%; }    /* Was 77% */
 
 /* CENTER RED BUTTON */
 .btn-learn-more {
