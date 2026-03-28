@@ -1,1 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevents side-scrolling */
+}
+
+.hero-background {
+    /* This points directly to the image in the same folder */
+    background: url("hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* This creates the "invisible" navigation bar over your image */
+.nav-overlay {
+    position: absolute;
+    top: 40px; /* Adjust this to move links up or down */
+    right: 5%;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-overlay a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black; /* Makes text readable */
+}
