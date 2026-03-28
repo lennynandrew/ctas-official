@@ -1,50 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; /* Prevents side-scrolling */
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 .hero-background {
-    /* 1. Point to your image */
-    background-image: url("hero.jpg");
-
-    /* 2. THE SECRET SAUCE: Forces image to match browser width and height exactly */
-    background-size: 100% 100%; 
-
-    /* 3. Anchors it to the top-left so the shield is the first thing it draws */
-    background-position: left top;
-
-    background-repeat: no-repeat;
-    
-    /* 4. Ensures it takes up the full screen of your laptop */
+    background: url("hero.jpg") no-repeat;
+    background-size: 100% 100%;
     height: 100vh;
-    width: 100%;
-    
+    width: 100vw;
     position: relative;
-    margin: 0;
-    padding: 0;
 }
 
-/* This creates the "invisible" navigation bar over your image */
-.nav-overlay {
+/* Common style for all "Invisible" buttons */
+.nav-overlay a, .btn-learn-more, .btn-security-shield, .btn-veteran-shield {
     position: absolute;
-    top: 40px; /* Adjust this to move links up or down */
-    right: 5%;
-    display: flex;
-    gap: 20px;
+    color: transparent; /* Hides the text so the image shows through */
+    text-decoration: none;
+    /* border: 1px solid red; */ /* UNCOMMENT THIS LINE TO SEE WHERE BUTTONS ARE WHILE TESTING */
 }
 
-.nav-overlay a {
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    text-shadow: 1px 1px 2px black; /* Makes text readable */
+/* TOP NAV ALIGNMENT (Approximate percentages based on your image) */
+.nav-home { top: 4%; left: 45%; width: 5%; height: 5%; }
+.nav-about { top: 4%; left: 51%; width: 6%; height: 5%; }
+.nav-services { top: 4%; left: 58%; width: 8%; height: 5%; }
+.nav-candidates { top: 4%; left: 67%; width: 9%; height: 5%; }
+.nav-contact { top: 4%; left: 77%; width: 8%; height: 5%; }
+
+/* CENTER RED BUTTON */
+.btn-learn-more {
+    top: 42%;
+    left: 42%;
+    width: 16%;
+    height: 6%;
 }
+
+/* BOTTOM SHIELDS */
+.btn-security-shield { bottom: 5%; left: 13%; width: 23%; height: 20%; }
+.btn-veteran-shield { bottom: 5%; left: 39%; width: 23%; height: 20%; }
