@@ -13,7 +13,7 @@
     position: absolute;
     color: transparent; /* Hides the text so the image shows through */
     text-decoration: none;
-    /* border: 1px solid red; */ /* UNCOMMENT THIS LINE TO SEE WHERE BUTTONS ARE WHILE TESTING */
+     border: 1px solid red;  /* UNCOMMENT THIS LINE TO SEE WHERE BUTTONS ARE WHILE TESTING */
 }
 
 /* TOP NAV ALIGNMENT (Approximate percentages based on your image) */
